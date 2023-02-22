@@ -43,8 +43,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="public/img/readme/DnBallstarsHome.png" width="375px" alt="De home pagina van DnB allstars">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="public/img/readme/DnBallstarsRadio.png" width="375px" alt="omschrijving van de pagina">
+  Drum & Bass Radio  
+  <img src="public/img/readme/DnBallstarsRadio.png" width="375px" alt= "Een atriekel over de Spotify radio podcast Drum & Bass Radio">
  
 </details>
 
