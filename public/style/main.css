@@ -1,0 +1,132 @@
+/* Custom properties */
+
+:root {
+   --main-bg-color: #000000;
+
+   --main-text-color: #ffffff;
+
+   --blue: #483fff;
+
+   --main-font: Bedas, Verdana, Arial, sans-serif;
+}
+
+@font-face {
+   font-family: 'Bedas';
+   src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+/* CSS Reset */
+*, *::after, *::before {
+   box-sizing:border-box;
+   margin: 0;
+   padding: 0;
+}
+
+ul{
+   list-style: none;
+}
+
+/* Styling */
+
+body{
+   margin: 0;
+   background: var(--main-bg-color);
+}
+
+h2{
+   font-family: var(--main-font);
+   text-transform: uppercase;
+   font-size: 8em;
+   color: var(--main-text-color);
+}
+section:nth-of-type(1) h2{
+   font-size: 12em;
+}
+
+h3{
+   font-family: var(--main-font);
+   text-transform: uppercase;
+   color: var(--main-text-color);
+}
+
+a{
+   text-decoration: none;
+   color: var(--main-text-color);
+}
+
+p{
+   color: var(--main-text-color);
+   font-size: 1em;
+   font-family: var(--main-font);
+}
+
+header{
+   background-color: transparent;
+   position: absolute;
+   display: grid;
+   width: 100%;
+}
+header a{
+   display: flex;
+}
+
+header img{
+   width: 30em;
+}
+
+nav{
+   position: absolute;
+   right: 0;
+}
+nav a{
+   font-family: var(--main-font);
+   color: var(--main-text-color);
+   font-size: 14px;
+}
+nav img {
+   cursor: pointer;
+   width: 6em;
+   height: 4.5em;
+   position: absolute;
+   top: 3.5em;
+   right: 18em;
+   z-index: 100;
+}
+nav section{
+   background-color: var(--main-bg-color);
+   height: 100%;
+   width: 16em;
+   padding: 2em 1em 0 1em;
+
+   position: fixed;
+   right: 0; top: 0; bottom: 0;
+   transform: translateX(100%);
+   transition: 0.5s;
+   z-index: 50;
+}
+nav.showNav section{
+   transform: translateX(0%);
+}
+
+
+main section:nth-of-type(1){
+   background-color: var(--main-bg-color);
+
+   height: 100vh;
+   display: flex;
+
+   align-items: center;
+   justify-content: center;
+}
+
+main section:nth-of-type(2){
+   background-color: lightcyan;
+}
+
+main section:nth-of-type(3){
+   background-color: lightgoldenrodyellow;
+}
+
+main section:nth-of-type(4){
+   background-color: lightgray;
+}
