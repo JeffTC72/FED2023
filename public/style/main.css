@@ -36,11 +36,11 @@ body{
 h2{
    font-family: var(--main-font);
    text-transform: uppercase;
-   font-size: 8em;
+   font-size: 10em;
    color: var(--main-text-color);
 }
 section:nth-of-type(1) h2{
-   font-size: 12em;
+   font-size: 14em;
 }
 
 h3{
@@ -74,6 +74,140 @@ header img{
    width: 30em;
 }
 
+main > section:nth-of-type(1){
+   background-color: var(--main-bg-color);
+
+   height: 100vh;
+   display: flex;
+
+   align-items: center;
+   justify-content: center;
+}
+main > section:nth-of-type(1) h2{
+   position: absolute;
+   z-index: 10;
+}
+main > section:nth-of-type(1) img{
+   width: 36em;
+
+   z-index: 20;
+}
+main > section:nth-of-type(1) section{
+   display: flex;
+   position: absolute;
+   height: 3em;
+   bottom: 6em;
+}
+main > section:nth-of-type(1) section img{
+   width: 3em;
+   margin: 0 2em 0 2em;
+   filter: invert(100);
+}
+
+
+
+
+
+
+
+
+main > section:nth-of-type(2){
+   background-color: var(--main-bg-color);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   height: 85vh;
+   margin-top: 3em;
+}
+main > section:nth-of-type(2) h2{
+   position: absolute;
+   top: 0;
+   left: 0.3em;
+}
+main > section:nth-of-type(2) iframe{
+   transform: scale(2.6);
+   position: absolute;
+   bottom: 25em;
+}
+
+
+
+
+
+
+
+
+
+main > section:nth-of-type(3){
+   background-color: var(--main-bg-color);
+   padding-bottom: 6em;
+   margin-top: 3em;
+}
+main > section:nth-of-type(3) h2{
+   margin-left: 0.3em;
+}
+
+main > section:nth-of-type(3) section{
+   background-color: transparent;
+
+   height: 100vh;
+
+   align-items: start;
+   justify-content: start;
+
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 1em;
+}
+main > section:nth-of-type(3) article:nth-of-type(1){
+   width: 90%;
+   height: 70em;
+   margin: auto;
+}
+main > section:nth-of-type(3) article:nth-of-type(2){
+   width: 90%;
+   height: 40em;
+   margin: auto;
+}
+main > section:nth-of-type(3) article figure{
+   position: relative;
+   height: 100%;
+}
+main > section:nth-of-type(3) article figcaption{
+   font-family: var(--main-font);
+   text-transform: uppercase;
+   font-size: 10em;
+   color: var(--main-text-color);
+   position: absolute;
+   width: 75%;
+   line-height: 1em;
+   bottom: 0;
+   left: 0.2em;
+}
+main > section:nth-of-type(3) article img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+
+
+
+
+
+main > section:nth-of-type(4){
+   background-color: lightgray;
+}
+
+
+
+
+
+
+
+
 nav{
    position: absolute;
    right: 0;
@@ -85,48 +219,51 @@ nav a{
 }
 nav img {
    cursor: pointer;
-   width: 6em;
-   height: 4.5em;
+   width: 5em;
+   height: 4em;
    position: absolute;
-   top: 3.5em;
-   right: 18em;
-   z-index: 100;
+   top: 4em;
+   right: 20em;
+   z-index: 50;
 }
 nav section{
    background-color: var(--main-bg-color);
    height: 100%;
-   width: 16em;
-   padding: 2em 1em 0 1em;
+   width: 80%;
+   padding: 0em 1em 0 1em;
 
    position: fixed;
+   display: flex;
+   align-items: flex-start;
    right: 0; top: 0; bottom: 0;
    transform: translateX(100%);
    transition: 0.5s;
-   z-index: 50;
+   z-index: 100;
 }
 nav.showNav section{
    transform: translateX(0%);
 }
 
+nav section img:nth-of-type(1){
+   width: 2em;
+   height: 2em;
 
-main section:nth-of-type(1){
-   background-color: var(--main-bg-color);
-
-   height: 100vh;
-   display: flex;
-
-   align-items: center;
-   justify-content: center;
+   position: absolute;
+   left: 4em;
+   top: 4em;
 }
 
-main section:nth-of-type(2){
-   background-color: lightcyan;
+nav li a{
+   font-family: var(--main-font);
+   font-size: 6em;
+   text-transform: uppercase;
+   color: var(--main-text-color);
+
+   margin-bottom: 0.5em;
+   position: relative;
+   top: 3em;
+   left: 1em;
 }
 
-main section:nth-of-type(3){
-   background-color: lightgoldenrodyellow;
-}
 
-main section:nth-of-type(4){
-   background-color: lightgray;
-}
+

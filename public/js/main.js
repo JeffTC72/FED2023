@@ -1,13 +1,21 @@
 
 // burger menu
-const deButton = document.querySelector("nav img");
+const openButton = document.querySelector("nav img");
+const closeButton = document.querySelector("nav section img");
 const deNav = document.querySelector("nav");
 
 
-deButton.addEventListener("click", toggleMenu);
+openButton.addEventListener("click", addMenu);
+closeButton.addEventListener("click", removeMenu);
 
-function toggleMenu(event) {
-  deNav.classList.toggle("showNav");
-  deButton.classList.toggle("showNav");
+function addMenu(event) {
+  deNav.classList.add("showNav");
+  openButton.classList.add("showNav");
+  closeButton.classList.add("showNav");
 }
-  
+
+function removeMenu(event) {
+  deNav.classList.remove("showNav");
+  openButton.classList.remove("showNav");
+  closeButton.classList.remove("showNav");
+}
