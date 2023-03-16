@@ -199,8 +199,40 @@ main > section:nth-of-type(3) article img{
 
 main > section:nth-of-type(4){
    background-color: lightgray;
+   margin-bottom: 3em;
 }
-
+main > section:nth-of-type(4) ul:nth-of-type(1) {
+   display: flex;
+   overflow: hidden;
+   scroll-snap-type: x mandatory;
+   scroll-behavior: smooth;
+   overscroll-behavior: none;
+}
+main > section:nth-of-type(4) ul:nth-of-type(1) li{
+   width: 100%;
+   flex-shrink: 0;
+}
+main > section:nth-of-type(4) ul:nth-of-type(1) img{
+   width: 100%;
+   scroll-snap-align: center;
+}
+main > section:nth-of-type(4) ul:nth-of-type(2){
+   display: flex;
+   justify-content: center;
+   gap: .5em;
+}
+main > section:nth-of-type(4) ul:nth-of-type(2) li{
+   width: 1em;
+}
+main > section:nth-of-type(4) ul:nth-of-type(2) li a{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 1em;
+}
+main > section:nth-of-type(4) ul:nth-of-type(2) img{
+   width: 50%;
+}
 
 
 
