@@ -149,7 +149,7 @@ main > section:nth-of-type(2){
 
    padding: 3em;
 }
-main > section:nth-of-type(2) img{
+main > section:nth-of-type(2) img, video{
    width: 55em;
    margin-bottom: 8em;
 }
@@ -164,12 +164,67 @@ main > section:nth-of-type(2) p{
 
 
 
+main > section:nth-of-type(3){
+   background-color: var(--main-bg-color);
+   padding-bottom: 6em;
+   margin-top: 3em;
+}
+main > section:nth-of-type(3) h2{
+   margin-left: 0.3em;
+}
+
+main > section:nth-of-type(3) section{
+   background-color: transparent;
+
+   height: 100%;
+
+   align-items: start;
+   justify-content: start;
+
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 1em;
+
+   padding: 1em;
+}
+main > section:nth-of-type(3) article:nth-of-type(1){
+   width: 90%;
+   height: 70em;
+   margin: auto;
+}
+main > section:nth-of-type(3) article figure{
+   position: relative;
+   height: 80%;
+}
+main > section:nth-of-type(3) article figcaption{
+   font-family: var(--main-font);
+   text-transform: uppercase;
+   font-size: 10em;
+   color: var(--main-text-color);
+   position: absolute;
+   width: 75%;
+   line-height: 1em;
+   bottom: 0;
+   left: 0.2em;
+}
+main > section:nth-of-type(3) article img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+
+
+
+
+
 
 
 footer{
    background-color: var(--main-bg-color);
    margin-bottom: 3em;
-   margin-top: 16em;
+   margin-top: 4em;
 }
 footer > h2{
    margin-left: .5em;
